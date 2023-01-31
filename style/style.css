@@ -1,7 +1,5 @@
 /*to do list: 
-1. przenieść flagi do osobnego <div> powyżej nazwiska, tak, żeby na mniejszych urządzeniach były na górze 
-albo
-2. wykminić dlaczego przy <600 px div .headImg ma dalej left-margin: auto
+1. wykminić dlaczego przy <600 px div .headImg ma dalej left-margin: auto
 */
 body{
 	background-color:black;
@@ -23,23 +21,36 @@ header{
     margin: 5px 5px 5px 5px;
     /* flex-shrink: 0; */
 }  
+/* container do użycia przy flagach
 .headImg{
-    display: flex; /*inline*/
-    margin-left: auto;
+        float: right;
+        display: flex; 
+        margin-left: auto;
 }
 .headFlag{
-    /* display: inline-block; */
+    /* display: inline-block; 
     width: 50px;
     height: 30px;
-    align-items: flex-start;
-  
-}
-/*przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg*/
+    }
+przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg
 .headImg:last-child{
 	margin-left: auto;
-}  
-    
+}  */ 
+.divLang{
+        float:right;
+        display: flex;
 }
+.lang{
+        float:right;
+        display: flex;
+        color: aliceblue;
+        font-size:small;
+        font-family: 'Alef', sans-serif;
+        padding: 3px;
+        margin-left: auto;
+        
+}
+
 .flexHead{
         display: flex;
         flex:100%;
