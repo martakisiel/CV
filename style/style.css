@@ -1,0 +1,113 @@
+/*to do list: 
+1. przenieść flagi do osobnego <div> powyżej nazwiska, tak, żeby na mniejszych urządzeniach były na górze 
+albo
+2. wykminić dlaczego przy <600 px div .headImg ma dalej left-margin: auto
+*/
+body{
+	background-color:black;
+	
+	}
+header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+        padding: 3px;
+        margin: 5px;
+    }
+.headline{
+    display: inherit;
+    color: aliceblue;
+    font-size: 80px;
+    font-family: 'Alef', sans-serif;
+    padding: 3px;
+    margin: 5px 5px 5px 5px;
+    /* flex-shrink: 0; */
+}  
+.headImg{
+    display: flex; /*inline*/
+    margin-left: auto;
+}
+.headFlag{
+    /* display: inline-block; */
+    width: 50px;
+    height: 30px;
+    align-items: flex-start;
+  
+}
+/*przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg*/
+.headImg:last-child{
+	margin-left: auto;
+}  
+    
+}
+.flexHead{
+        display: flex;
+        flex:100%;
+        background-image:radial-gradient(grey, black 90%);
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align:center;
+        padding-bottom: 20px;
+        margin:0px ;
+        }
+.flexBody{
+        display: flex;
+        flex:100%;
+        background-color: lightgray;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        margin:0px ;
+        }
+*{
+        box-sizing: border-box;
+        }
+.imgContainer{
+        float: center;
+        width: 33.33%; /*dzieli obszar na 3 czesci*/
+        padding: 3px;
+
+
+
+
+
+
+
+
+
+
+/* da się to uzywać w stylach za miast w <header>?@import url('https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Jost:ital,wght@0,500;1,300&display=swap');*/
+
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 600px) {
+	.flexHead {
+	  flex-direction: column; /*to jest potrzebne, żeby kolumny zawijały się w wiersze*/
+	}
+	.flexBody{
+		flex-direction: column;
+	}
+	ul.navbar{
+	flex-direction: column;
+	}
+    header{
+        flex-direction: column;
+        }
+
+    .headImg{
+       /* flex-direction: column;
+        align-items: flex-start;*/
+        margin-left: 0px;
+            
+        }
+	.headImg:last-child{
+		
+        margin-left: 0px;
+        
+	}
+   
+        
+	}
+  }
