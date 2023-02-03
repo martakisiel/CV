@@ -1,5 +1,9 @@
 /*to do list: 
 1. wykminić dlaczego przy <600 px div .headImg ma dalej left-margin: auto
+2. muszą się ładnie układać jedno pod drugim wszystkie elementy
+3. ładne łamanie tekstu
+4.punktory w summary
+5. nad summary dodać linki do mediow
 */
 body{
 	background-color:black;
@@ -21,6 +25,14 @@ header{
     margin: 5px 5px 5px 5px;
     /* flex-shrink: 0; */
 }  
+.text{
+        display: inherit;
+        color: aliceblue;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        padding: 3px;
+        margin: 5px 5px 5px 5px;
+}
 /* container do użycia przy flagach
 .headImg{
         float: right;
@@ -63,25 +75,65 @@ przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg
         margin:0px ;
         }
 .flexBody{
-        display: flex;
+        display:flex;
+        width: 60%;
         flex:100%;
+        float: right;
         background-color: lightgray;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        padding-top: 5px;
-        margin:0px ;
+        padding: 5px;
+        margin: 0px ;
         }
-*{
+.flexSide{
+        display: flex;
+        width: 35%;
+        float: left;
+        flex:100%;
+        background-color: rgb(13, 193, 43);
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        margin: 0px ;
+        }
+.summary{
+        display:flex;
+        width: 60%;
+        flex:100%;
+        float: right;
+        background-color: rgb(0, 0, 0);
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 5px;
+        margin: 0px ;  
+}
+/* *{
         box-sizing: border-box;
-        }
+        } */
 .imgContainer{
-        float: center;
-        width: 33.33%; /*dzieli obszar na 3 czesci*/
+        float: left;
+        width: 30%; /*dzieli obszar na 3 czesci*/
+        height: auto;
         padding: 3px;
+        clip-path: circle(60px at centre);
+}
+        img{
+                width: 300px;
+                height: 200px;
+        }
+.clipCircle{
+        clip-path: circle(100px at center);
+}
 
 
 
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+         }
 
 
 
