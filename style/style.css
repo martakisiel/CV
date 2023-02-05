@@ -2,12 +2,13 @@
 1. wykminić dlaczego przy <600 px div .headImg ma dalej left-margin: auto
 2. muszą się ładnie układać jedno pod drugim wszystkie elementy
 3. ładne łamanie tekstu
-4.punktory w summary
+4.punktory w summary (usunac class "text" z li)
 
 6. zdjęcie ma być wyjustowane pośrodku summary, po pomniejszeniu powinno wskoczyć od razu na lewo
-7.dobrać drugą czcionke
+
 8.dodać rzycisk drukuj
 9.dostosować @media
+10. nagłówki w kolumnie bocznej na lewo?
 */
 body{
 	background-color:black;
@@ -25,6 +26,7 @@ body{
                 align-items: left;
                 justify-content: center; 
                 margin: 0.5px;
+                flex-flow: row wrap;
               }
               
               .col-10 {width: 10%;}
@@ -68,7 +70,7 @@ header{
         display: inherit;
         color: aliceblue;
         font-size: 2.3vw;
-        font-family: 'Lato', sans-serif;
+        font-family: 'lato';
         padding: 3px;
         margin: 3px;
 }
@@ -76,7 +78,7 @@ header{
         display: inherit;
         color: aliceblue;
         font-size: 1.5vw;
-        font-family: 'Lato', sans-serif;
+        font-family: 'lato';
         padding: 1px;
         margin: 3px;
 }
@@ -84,7 +86,7 @@ header{
         display: inherit;
         color: aliceblue;
         font-size: 2.3vw;
-        font-family: 'Lato', sans-serif;
+        font-family: 'lato';
         padding: 1px;
         margin: 3px;
         font-style: italic;
@@ -93,26 +95,29 @@ header{
         display: inherit;
         color: aliceblue;
         font-size: 2.3vw;
-        font-family: 'Lato', sans-serif;
+        font-family: 'lato';
         padding: 1px;
         margin: 3px;
-        font-weight:bold;
+        font-weight:bolder;
+}
+li{
+        margin-left: 20px;
 }
 a:link{
         target: _blank;
-        color: aliceblue;
+        color: rgb(45, 123, 72);
         background-color: transparent;
         text-decoration: none;
 }
 a:visited{
         target: _blank;
-        color: aliceblue;
+        color: rgb(41, 120, 62);
         background-color: transparent;
         text-decoration: none;
 }
 a:hover{
         target: _blank;
-        color: green;
+        color: rgb(45, 66, 120);
         background-color: transparent;
         text-decoration: none;
 }
