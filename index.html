@@ -12,35 +12,48 @@
 </head>
 <body>
     <!--przyciski do zmiany języka-->
-	 <nav class="divLang"><div class="lang">Pl</div><div class="lang">Eng</div></nav>
-     
-        <!-- wersja z flagami
-            <div class="headImg">
-            <img class="headFlag" src="D:\frontend\web-projects\CV\images\pl.JPG">
-            <img class="headFlag" src="D:\frontend\web-projects\CV\images\eng.JPG"> 
-            </div>-->
+	<div class="clearfix">
+        <nav class="divLang"><div class="lang">Pl</div><div class="lang">Eng</div></nav>
+    </div>
+        
 	
-        <header>
-            <div class="headline">Marta Kisiel</div>
-        </header>
-<!-- <div class="clearfix">clear</div> -->
-    <!-- <div class="imgContainer"> -->
-        <img src="D:\frontend\web-projects\CV\images\IMG_0290.JPG">
-    <!-- </div> -->
-    <!-- <div class="clearfix">clear</div> -->
+    <div class="clearfix" style="display: flex;align-items: flex-start;"> 
+        <div class="headline col-65" style="float:left;margin-left:2%;">Marta Kisiel</div>
 
-    <div class="summary text">
-        <h1 class="h1">SUMMARY</h1>
-        Online researching and analytical skills.<br>   
-        Strong background and focus on natural environment studies. <br>
-        Quick and eager learner of new development languages for websites.<br>
-        Experience in work in an international, multi-cultural environments.<br>
+        <div class="col-20, textSmall" style="float:right;flex-direction:column;flex-wrap: wrap; justify-content:left;align-items:flex-start " >
+        <div class="col-10, textSmall" style="flex-direction:row;flex-wrap: wrap; justify-content: left;align-items: baseline;" ><img src="D:\frontend\web-projects\CV\images\point-w.png" alt="place" width="3%" height="3%" style="margin-right: 10px;">Krakow, Poland</div>   
+        <div class="col-10, textSmall" style="flex-direction:row;flex-wrap: wrap; justify-content: left;align-items:baseline;"><img src="D:\frontend\web-projects\CV\images\at_w.png" alt="e-mail" width="3%" height="3%" style="margin-right: 10px;">marta.kisiel91@gmail.com</div>
+        <div class="col-10, textSmall" style="flex-direction:row;flex-wrap: wrap; justify-content: left;align-items: baseline;"><img src="D:\frontend\web-projects\CV\images\phone_w.png" alt="phone" width="3%" height="3%"style="margin-right: 10px;">+48 661 278 502</div>
+        <div class="col-10, textSmall" style="flex-direction:row;flex-wrap: wrap; justify-content: left;align-items: baseline;"><img src="D:\frontend\web-projects\CV\images\github-mark-white.png" alt="github" width="5%" height="5%"style="margin-right: 10px;"><a href="https://github.com/martakisiel">GitHub</a></div>
+
+        </div>
 
     </div>
-    <div class="clearfix">clear</div>
-    <div class="flexSide">left</div>
-    <div class="flexBody">right</div>
 
+    <div class="clearfix"> 
+        <div class="col-30" style="float: right;">
+            <img src="D:\frontend\web-projects\CV\images\IMG_0290.JPG" alt="profile" style="margin-right: 7%;width:150%; height: 150%; clip-path: circle(35% at center);">
+        </div>
+        <div class="col-65" style="float: left;">
+            <ul ><h1 class="h1">SUMMARY</h1>
+                <li class="text">Researching and analytical skills.</li>   
+                <li class="text">Quick learner and eager to learn new web technologies.</li>
+                <li class="text">Experienced in team work in an international environments.</li>
+                <li class="text">Strong background in the natural sciences studies.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="clearfix">
+        <div class="col-65" style="float: left;">
+            <ul ><h1 class="h1">EMPLOYMENT</h1>
+                <div class="textBold">September 2016- present – PhD studies, Jagiellonian University</div>
+                    <div class="textItallic">PhD candidate</div>  
+                <li class="text">Quick learner and eager to learn new web technologies.</li>
+                <li class="text">Experienced in team work in an international environments.</li>
+                <li class="text">Strong background in the natural sciences studies.</li>
+            </ul>
+        </div>
 
-
+    </div>
     </body>

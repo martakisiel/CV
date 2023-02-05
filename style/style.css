@@ -3,16 +3,42 @@
 2. muszą się ładnie układać jedno pod drugim wszystkie elementy
 3. ładne łamanie tekstu
 4.punktory w summary
-5. nad summary dodać linki do mediow
+
 6. zdjęcie ma być wyjustowane pośrodku summary, po pomniejszeniu powinno wskoczyć od razu na lewo
 7.dobrać drugą czcionke
-
+8.dodać rzycisk drukuj
+9.dostosować @media
 */
 body{
 	background-color:black;
         font-size: 100%;
-	
 	}
+
+ * {
+    box-sizing: border-box;
+   }
+
+[class*="col-"] {
+                display: flex;
+                padding: 5px; /*odleg. miedzy obiektami*/
+                /* border: 1px solid red; */
+                align-items: left;
+                justify-content: center; 
+                margin: 0.5px;
+              }
+              
+              .col-10 {width: 10%;}
+              .col-15 {width: 15%;}
+              .col-20 {width: 20%;}
+              .col-25 {width: 25%;}
+              .col-30 {width: 30%;}
+              .col-35 {width: 35%;}
+              .col-50 {width: 50%;}
+              .col-60 {width: 60%;}
+              .col-65 {width: 65%;}
+              .col-75 {width: 75%;}
+              .col-100 {width: 100%;}
+              
 header{
         display: flex;
         flex-flow: row wrap;
@@ -21,18 +47,19 @@ header{
         margin: 5px;
     }
 .headline{
+         justify-content: left;
     display: inherit;
     color: aliceblue;
-    font-size: 10vw; /*vw- view-width, responsive fonst-size*/
+    font-size: 9vw; /*vw- view-width, responsive fonst-size*/
     font-family: 'Alef', sans-serif;
     padding: 3px;
-    margin: 5px 5px 5px 5px;
+    margin-left: 0px;
     /* flex-shrink: 0; */
 } 
 .h1{
         display: inherit;
         color: aliceblue;
-        font-size: 4vw;
+        font-size: 3.5vw;
         font-family: 'Alef', sans-serif;
         padding: 3px;
         margin: 2px 2px 2px 2px;      
@@ -40,10 +67,65 @@ header{
 .text{
         display: inherit;
         color: aliceblue;
-        font-size: 3vw;
+        font-size: 2.3vw;
         font-family: 'Lato', sans-serif;
         padding: 3px;
-        margin: 5px 5px 5px 5px;
+        margin: 3px;
+}
+.textSmall{
+        display: inherit;
+        color: aliceblue;
+        font-size: 1.5vw;
+        font-family: 'Lato', sans-serif;
+        padding: 1px;
+        margin: 3px;
+}
+.textItallic{
+        display: inherit;
+        color: aliceblue;
+        font-size: 2.3vw;
+        font-family: 'Lato', sans-serif;
+        padding: 1px;
+        margin: 3px;
+        font-style: italic;
+}
+.textBold{
+        display: inherit;
+        color: aliceblue;
+        font-size: 2.3vw;
+        font-family: 'Lato', sans-serif;
+        padding: 1px;
+        margin: 3px;
+        font-weight:bold;
+}
+a:link{
+        target: _blank;
+        color: aliceblue;
+        background-color: transparent;
+        text-decoration: none;
+}
+a:visited{
+        target: _blank;
+        color: aliceblue;
+        background-color: transparent;
+        text-decoration: none;
+}
+a:hover{
+        target: _blank;
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+}
+.summary{
+        display:flex;
+        
+        /* flex:100%; */
+        /* float: left; */
+        background-color: rgb(0, 0, 0);
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 5px;
+        margin: 0px ;  
 }
 /* container do użycia przy flagach
 .headImg{
@@ -86,7 +168,7 @@ przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg
         padding-bottom: 20px;
         margin:0px ;
         }
-.flexBody{
+/* .flexBody{
         display:flex;
         width: 60%;
         flex:100%;
@@ -110,17 +192,7 @@ przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg
         padding: 5px;
         margin: 0px ;
         }
-.summary{
-        display:flex;
-        width: 60%;
-        flex:100%;
-        float: left;
-        background-color: rgb(0, 0, 0);
-        flex-flow: row wrap;
-        align-items: center;
-        padding: 5px;
-        margin: 0px ;  
-}
+ */
 /* *{
         box-sizing: border-box;
         } */
@@ -132,17 +204,26 @@ przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg
         padding: 3px;
         clip-path: circle(60px at centre); 
 }*/
-img{
+/* img{
         display: flex;
         float: right;
         width: 35%;
         max-width: 300px;
         max-height: 200px;
         margin: auto;
-        clip-path: circle(35% at center); /*35% jest ok srednicą */
-        }
+        clip-path: circle(35% at center); /*35% jest ok srednicą 
+        } */
         
-
+/* .picture{
+        display: flex;
+        float: right;
+        width: 35%;
+        max-width: 300px;
+        max-height: 200px;
+        margin: auto;
+        clip-path: circle(35% at center); /*35% jest ok srednicą 
+   
+        } */
 
 .clearfix::after {
         content: "";
@@ -161,6 +242,9 @@ img{
 
         /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 500px) {
+        [class*="col-"]{
+                flex-direction: column;
+        }
 	.flexHead {
 	        flex-direction: column; /*to jest potrzebne, żeby kolumny zawijały się w wiersze*/
 	}
