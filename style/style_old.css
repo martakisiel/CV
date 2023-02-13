@@ -284,7 +284,7 @@ przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg
         .summary{
                 flex-direction: column;
         }
-/*@media print{
+@media print{
  a href="D:\frontend\web-projects\CV\images\CV_2023.pdf"
 }
     /* .headImg{
@@ -300,3 +300,5 @@ przesunięcie flag na prawo, albo wystarczy dodać margin-left:auto w .headImg
 	}
     */
         
+	
+  }
