@@ -1,0 +1,29 @@
+/*to do list: 
+1. wykminić dlaczego przy <600 px div .headImg ma dalej left-margin: auto
+2. muszą się ładnie układać jedno pod drugim wszystkie elementy
+3.punktory w summary (usunac class "text" z li)
+
+6. zdjęcie ma być wyjustowane pośrodku summary, po pomniejszeniu powinno wskoczyć od razu na lewo
+
+8.dodać rzycisk drukuj
+9.dostosować @media
+10. nagłówki w kolumnie bocznej na lewo?
+11. dodać link do bloga (zrobic bloga!)
+12. po wybraniu języka drukować ma się CV w danym jezyku
+*/
+The birt I can hear but not see...
+pełzacz
+The bird that can't find whatever it lost.
+kos
+The perfect landing
+sikorki
+
+Before I emmarge into the forest I have observed tits (stop!) and sparrows out site hose I used to leave on. I was so lucky that I had an apple tree just next to my balcony. I didn't know how much bugs and worms lived there! The tits had a pretty nice canteen out there. One day, however, I've seen something even stranger. I've heard tits on the tree so I've taken my camera and I've started to search them. There they was, on a small branch holding in beak... a cigaret. Not lit. Just a used one. 
+You wonder if my tits were kill stress by smoking? Nope. However, they did kill... an parasites in the nest! Apparently urban birds collect smoked cigarets butts from sidewalks or loawn and put them in the nest to reduce a number of nest-dwelling parasites and/or to reppels insects(Suárez-Rodríguez Monserrat, López-Rull Isabel and Macías Garcia Constantino 2013Incorporation of cigarette butts into nests reduces nest ectoparasite load in urban birds: new ingredients for an old recipe?Biol. Lett.92012093120120931). It may not be safe for the birds though.  
+
+Calling myself a wildlife photographer is a liite bit to much, but I like to thing that one day I will use all te expirence I gathered photographing birds and squerls in Krakow's forest in reall wild environments.
+After a long break I've started to watch birds more closely again in spring 2020. The forest that I have passed appeard to be amaizing place. There have been a lots of noises. From a cars passing by to wind moving the trees. But when I stopped for a few minutes I could count several bird singing. It was funny, because I wasn't an "early bird" and I was 'hunting' for a photos more like in the middle of a day than in the morning, but thankfully the early spring is this time of the year that birds works almost 24/7.
+Have you ever stopped near the tits nest-house and measured the time they spent inside feeding the young ones? It's more than seconds than minutes. During that time the parents "change" the diperss to. And then they flew away looking for food for about 5 minutes. They do not rest. How could they, when the litte ones "scream" that they are hungry?
+So Covid made me spent a much more time in the iland of natural environment among city jungle than I used to. It become a great adventure that bring me a lot of joy and relief.
+Stay tuned. 
+
