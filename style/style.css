@@ -1,6 +1,7 @@
 body {
         background-color: black;
         font-size: 100%;
+        margin: 0px;
 }
 
 * {
@@ -10,15 +11,12 @@ body {
 [class*="col-"] {
         display: flex;
         padding: 5px;
-        /*odleg. miedzy obiektami*/
-        /* border: 1px solid red; */
         align-items: left;
         justify-content: center;
-        margin: 0.5px;
+        margin: 2px;
         flex-flow: row wrap;
-        padding: 2.5 rem;
+        padding: 0px;
         line-height: 1.5;
-        letter-spacing: 0.12rem;
         word-spacing: 0.16rem;
 }
 
@@ -46,6 +44,10 @@ body {
         width: 35%;
 }
 
+.col-40 {
+        width: 40%;
+}
+
 .col-50 {
         width: 50%;
 }
@@ -62,17 +64,14 @@ body {
         width: 75%;
 }
 
+.col-80 {
+        width: 80%;
+}
+
 .col-100 {
         width: 100%;
 }
 
-header {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: left;
-        padding: 3px;
-        margin: 5px;
-}
 
 .headline {
         justify-content: left;
@@ -81,9 +80,8 @@ header {
         font-size: 9vw;
         /*vw- view-width, responsive fonst-size*/
         font-family: 'Alef', sans-serif;
-        padding: 3px;
-        margin-left: 0px;
-        /* flex-shrink: 0; */
+        padding: 0px;
+        margin-left: 2px;
 }
 
 .h1 {
@@ -91,17 +89,28 @@ header {
         color: aliceblue;
         font-size: 3.5vw;
         font-family: 'Alef', sans-serif;
-        padding: 3px;
+        padding: 0px;
         margin: 2px 2px 2px 2px;
+}
+
+.imgProfile {
+        display: flex;
+        padding: 0px;
+        /*odleg. miedzy obiektami*/
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+        clip-path: circle(45% at center);
 }
 
 .text {
         display: inherit;
         color: aliceblue;
-        font-size: 2.3vw;
+        font-size: 1.8vw;
         font-family: 'lato';
-        padding: 3px;
-        margin: 3px;
+        padding: 0px;
+        margin: 2px;
 }
 
 .textSmall {
@@ -109,32 +118,32 @@ header {
         color: aliceblue;
         font-size: 1.5vw;
         font-family: 'lato';
-        padding: 1px;
-        margin: 3px;
+        padding: 0px;
+        margin: 2px;
 }
 
 .textItallic {
         display: inherit;
         color: aliceblue;
-        font-size: 2.3vw;
+        font-size: 1.8vw;
         font-family: 'lato';
-        padding: 1px;
-        margin: 3px;
+        padding: 0px;
+        margin: 2px;
         font-style: italic;
 }
 
 .textBold {
         display: inherit;
         color: aliceblue;
-        font-size: 2.3vw;
+        font-size: 1.8vw;
         font-family: 'lato';
-        padding: 1px;
-        margin: 3px;
+        padding: 0px;
+        margin: 2px;
         font-weight: bolder;
 }
 
 li {
-        margin-left: 20px;
+        margin-left: 10px;
 }
 
 a:link {
@@ -150,47 +159,28 @@ a:visited {
 }
 
 a:hover {
-        color: rgb(41, 214, 227);
+        color: rgb(41, 127, 133);
         background-color: transparent;
         text-decoration: none;
 }
 
 .summary {
         display: flex;
-        /* float: left; */
+        float: left;
         background-color: rgb(0, 0, 0);
         flex-flow: row wrap;
         align-items: center;
-        padding: 2.5 rem;
-        line-height: 1.5;
+
 }
 
-.divLang {
-        float: right;
-        display: flex;
-}
-
-.lang {
+.print {
         float: right;
         display: flex;
         color: aliceblue;
-        font-size: small;
-        font-family: 'Alef', sans-serif;
-        padding: 3px;
-        margin-left: auto;
-
-}
-
-.flexHead {
-        display: flex;
-        flex: 100%;
-        background-image: radial-gradient(grey, black 90%);
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        padding-bottom: 20px;
-        margin: 0px;
+        font-size: 1.5vw;
+        font-family: 'lato', sans-serif;
+        padding: 0px;
+        margin-right: 20px;
 
 }
 
@@ -200,7 +190,6 @@ a:hover {
         display: table;
 }
 
-/* da się to uzywać w stylach za miast w <header>?@import url('https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Jost:ital,wght@0,500;1,300&display=swap');*/
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 500px) {
@@ -208,23 +197,17 @@ a:hover {
                 flex-direction: column;
         }
 
-        .flexHead {
-                flex-direction: column;
-                /*to jest potrzebne, żeby kolumny zawijały się w wiersze*/
-        }
 
-        .flexBody {
-                flex-direction: column;
-        }
-
-        header {
-                flex-direction: column;
-        }
 
         img {
                 flex-direction: column;
                 margin: 0px;
 
+        }
+
+        .imgProfile {
+                flex-direction: column;
+                float: left;
         }
 
         .flexSide {
@@ -239,10 +222,5 @@ a:hover {
         .summary {
                 flex-direction: column;
         }
-
-        /*@media print{
-a href="D:\frontend\web-projects\CV\images\CV_2023.pdf"
-}
-*/
 
 }
