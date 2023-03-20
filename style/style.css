@@ -101,8 +101,8 @@ body {
         padding: 0px;
         /*odleg. miedzy obiektami*/
         align-items: center;
-        width: 100%;
-        height: 100%;
+        width: 70%!important;
+        height: auto;
         clip-path: circle(45% at center);
 }
 
