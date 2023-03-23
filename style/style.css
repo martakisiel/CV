@@ -1,9 +1,33 @@
 body{
-    background-color: black;
-    font-family: 'lato';
+    background-color: rgb(0, 0, 0);
+    font-family: 'Poppins';
     color: aliceblue;
+}
+.h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: 'acme';
+}
+.cardBG{
+    background-color: black;
 }
 .imgProfile{
     max-width: 200px;
     max-height: auto;
 }
+.imgClipart{
+    max-height: 20px;
+    max-width: auto;
+}
+.imgPortfolio{
+    width:800px;
+    height:auto;
+}
+.footerText{
+    font-family:'poppins';
+    font-size: 5px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
