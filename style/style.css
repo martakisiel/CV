@@ -9,6 +9,10 @@ body{
 .cardBG{
     background-color: black;
 }
+.cardGalery{
+    width: 20rem;
+    justify-content: center;
+    }
 .imgProfile{
     max-width: 200px;
     max-height: auto;
@@ -20,6 +24,32 @@ body{
 .imgPortfolio{
     width:800px;
     height:auto;
+}
+ .imgGaleryFront{
+    max-width: 400px;
+    max-height: auto;
+} 
+.headGalery{
+
+    height: 150px;
+    width: 100%;
+    font-family: 'poppins';
+    font-size: 80px;
+    margin-bottom: 10px;
+    justify-content: center;
+
+}
+
+.headAlbum{
+    background-image:image(./galery/IMG_9027.JPG);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-attachment: fixed; /*jest duża róznica miedzy fixed i scroll*/
+    height: 150px;
+    width: 100%;
+    font-family: 'poppins';
+    font-size: 80px;
+
 }
 .footerText{
     font-family:'poppins';
